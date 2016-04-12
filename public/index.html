@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/newsfeed.css">
+    <link rel="stylesheet" href="css/view_animation.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body>
+<div ui-view="menu"></div>
+<div class="site">
+    <div ng-class="{'hidden' : menu.menu_state}" ui-view="container" ng-animate="'view'"></div>
+</div>
+
+</body>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services/nav.js"></script>
+<script src="js/controllers/home.js"></script>
+<script src="js/controllers/about.js"></script>
+<script src="js/controllers/nav.js"></script>
+
+<script src="js/app.js"></script>
+
+</html>

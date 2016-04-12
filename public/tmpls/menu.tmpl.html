@@ -1,0 +1,9 @@
+<div class="menu" ng-class="{'hidden' : !menu.menu_state}">
+
+    <div class="menubtn close" ng-click="menu.menu_btn()">
+        <i class="fa fa-bars " ng-hide="menu.menu_state"></i>
+        <i class="fa fa-times " ng-show="menu.menu_state"></i>
+    </div>
+
+    <a class="menu-item" ng-repeat="i in navigation.links" ng-click="navigation.goTo(i.href,menu)"><p>{{i.name}}</p></a>
+</div>
